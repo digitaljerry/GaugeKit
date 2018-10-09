@@ -277,4 +277,8 @@ open class Gauge: UIView {
         layer.addSublayer(gaugeLayer)
         updateLayerProperties()
     }
+    
+    public func invalidateAnimationTimer() {
+        animationTimer.invalidate()
+    }
 }
